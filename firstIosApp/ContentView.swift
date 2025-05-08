@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  firstIosApp
+//  test123
 //
-//  Created by 해규 on 4/29/25.
+//  Created by 해규 on 5/8/25.
 //
 
 import SwiftUI
@@ -13,7 +13,7 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello!!!, world!")
+            Text("Hello, world!")
         }
         .padding()
     }
@@ -22,7 +22,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
-
-
-
