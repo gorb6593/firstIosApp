@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4A2A73862DCCFED500ACF23E /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 4A2A73852DCCFED500ACF23E /* Starscream */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		4AF62C032DC1170200ECC040 /* firstIosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firstIosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A2A73862DCCFED500ACF23E /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = firstIosApp;
 			packageProductDependencies = (
+				4A2A73852DCCFED500ACF23E /* Starscream */,
 			);
 			productName = firstIosApp;
 			productReference = 4AF62C032DC1170200ECC040 /* firstIosApp.app */;
@@ -94,6 +100,10 @@
 			);
 			mainGroup = 4AF62BFA2DC1170200ECC040;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4A2A73842DCCFED500ACF23E /* XCRemoteSwiftPackageReference "Starscream" */,
+				4A2A73872DCCFF9900ACF23E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4AF62C042DC1170200ECC040 /* Products */;
 			projectDirPath = "";
@@ -335,6 +345,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4A2A73842DCCFED500ACF23E /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.8;
+			};
+		};
+		4A2A73872DCCFF9900ACF23E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4A2A73852DCCFED500ACF23E /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A2A73842DCCFED500ACF23E /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4AF62BFB2DC1170200ECC040 /* Project object */;
 }
