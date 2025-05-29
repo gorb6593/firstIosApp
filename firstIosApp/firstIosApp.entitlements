@@ -2,6 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<array/>
+		<array/>
+	</array>
+	<key>NidUrlScheme</key>
+	<string>com.myapp.naverlogin</string>
+	<key>NidClientSecret</key>
+	<string>z26Y1Je6cR</string>
+	<key>NidClientID</key>
+	<string>xFFbtD5AcGOgGSNIPYt1</string>
 	<key>NidAppName</key>
 	<string>MyCounselingApp</string>
 	<key>com.apple.security.files.user-selected.read-only</key>
