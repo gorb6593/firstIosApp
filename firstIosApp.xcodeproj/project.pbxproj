@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4A03C4FC2DE89CE1005E00A4 /* NidThirdPartyLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 4A03C4FB2DE89CE1005E00A4 /* NidThirdPartyLogin */; };
+		4A03C50B2DE9F51A005E00A4 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 4A03C50A2DE9F51A005E00A4 /* SwiftKeychainWrapper */; };
+		4A03C51D2DE9FA39005E00A4 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 4A03C51C2DE9FA39005E00A4 /* KakaoSDK */; };
+		4A03C51F2DE9FA39005E00A4 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4A03C51E2DE9FA39005E00A4 /* KakaoSDKAuth */; };
+		4A03C5212DE9FA39005E00A4 /* KakaoSDKCert in Frameworks */ = {isa = PBXBuildFile; productRef = 4A03C5202DE9FA39005E00A4 /* KakaoSDKCert */; };
+		4A03C5232DE9FA39005E00A4 /* KakaoSDKCertCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4A03C5222DE9FA39005E00A4 /* KakaoSDKCertCore */; };
+		4A03C5252DE9FA39005E00A4 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 4A03C5242DE9FA39005E00A4 /* KakaoSDKCommon */; };
 		4A2A73862DCCFED500ACF23E /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 4A2A73852DCCFED500ACF23E /* Starscream */; };
 		7105BA798375D53331D3F5CA /* Pods_firstIosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC14B8AEBA0B75F3BB113A84 /* Pods_firstIosApp.framework */; };
 /* End PBXBuildFile section */
@@ -22,8 +28,6 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4AF62C052DC1170200ECC040 /* firstIosApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = firstIosApp;
 			sourceTree = "<group>";
 		};
@@ -34,9 +38,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A03C5232DE9FA39005E00A4 /* KakaoSDKCertCore in Frameworks */,
 				4A2A73862DCCFED500ACF23E /* Starscream in Frameworks */,
+				4A03C51D2DE9FA39005E00A4 /* KakaoSDK in Frameworks */,
 				4A03C4FC2DE89CE1005E00A4 /* NidThirdPartyLogin in Frameworks */,
+				4A03C5252DE9FA39005E00A4 /* KakaoSDKCommon in Frameworks */,
+				4A03C50B2DE9F51A005E00A4 /* SwiftKeychainWrapper in Frameworks */,
 				7105BA798375D53331D3F5CA /* Pods_firstIosApp.framework in Frameworks */,
+				4A03C5212DE9FA39005E00A4 /* KakaoSDKCert in Frameworks */,
+				4A03C51F2DE9FA39005E00A4 /* KakaoSDKAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +85,6 @@
 				A5133A36CE01202D3220B41E /* Pods-firstIosApp.debug.xcconfig */,
 				F2CEC89E5D1FE6429BB6B0C8 /* Pods-firstIosApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,6 +112,12 @@
 			packageProductDependencies = (
 				4A2A73852DCCFED500ACF23E /* Starscream */,
 				4A03C4FB2DE89CE1005E00A4 /* NidThirdPartyLogin */,
+				4A03C50A2DE9F51A005E00A4 /* SwiftKeychainWrapper */,
+				4A03C51C2DE9FA39005E00A4 /* KakaoSDK */,
+				4A03C51E2DE9FA39005E00A4 /* KakaoSDKAuth */,
+				4A03C5202DE9FA39005E00A4 /* KakaoSDKCert */,
+				4A03C5222DE9FA39005E00A4 /* KakaoSDKCertCore */,
+				4A03C5242DE9FA39005E00A4 /* KakaoSDKCommon */,
 			);
 			productName = firstIosApp;
 			productReference = 4AF62C032DC1170200ECC040 /* firstIosApp.app */;
@@ -136,6 +151,8 @@
 				4A2A73842DCCFED500ACF23E /* XCRemoteSwiftPackageReference "Starscream" */,
 				4A2A73872DCCFF9900ACF23E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				4A03C4FA2DE89CE1005E00A4 /* XCRemoteSwiftPackageReference "naveridlogin-sdk-ios-swift" */,
+				4A03C5082DE9F3E9005E00A4 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+				4A03C5092DE9F51A005E00A4 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4AF62C042DC1170200ECC040 /* Products */;
@@ -188,9 +205,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-firstIosApp/Pods-firstIosApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-firstIosApp/Pods-firstIosApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -432,6 +453,22 @@
 				minimumVersion = 5.0.1;
 			};
 		};
+		4A03C5082DE9F3E9005E00A4 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.24.2;
+			};
+		};
+		4A03C5092DE9F51A005E00A4 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
 		4A2A73842DCCFED500ACF23E /* XCRemoteSwiftPackageReference "Starscream" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/daltoniam/Starscream";
@@ -455,6 +492,36 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4A03C4FA2DE89CE1005E00A4 /* XCRemoteSwiftPackageReference "naveridlogin-sdk-ios-swift" */;
 			productName = NidThirdPartyLogin;
+		};
+		4A03C50A2DE9F51A005E00A4 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A03C5092DE9F51A005E00A4 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+		4A03C51C2DE9FA39005E00A4 /* KakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A03C5082DE9F3E9005E00A4 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDK;
+		};
+		4A03C51E2DE9FA39005E00A4 /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A03C5082DE9F3E9005E00A4 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
+		};
+		4A03C5202DE9FA39005E00A4 /* KakaoSDKCert */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A03C5082DE9F3E9005E00A4 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCert;
+		};
+		4A03C5222DE9FA39005E00A4 /* KakaoSDKCertCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A03C5082DE9F3E9005E00A4 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCertCore;
+		};
+		4A03C5242DE9FA39005E00A4 /* KakaoSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A03C5082DE9F3E9005E00A4 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCommon;
 		};
 		4A2A73852DCCFED500ACF23E /* Starscream */ = {
 			isa = XCSwiftPackageProductDependency;
